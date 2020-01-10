@@ -1,0 +1,7 @@
+點擊按鈕隨機產生亂數
+根據亂數值仔入對應骰子圖片
+
+Xml
+res\imageview_example_main
+Kotlin
+Kotlin\ImageViewActivityEX

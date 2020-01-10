@@ -1,0 +1,23 @@
+1.每個Android App運行時，最先會創建Application類並實利化Application對象，且只有一個
+2.Application是單例模式(singleton)類別
+3.Application即等於Android App的生命週期
+4.可繼承Application類別，自訂義Application類別和實例
+
+單例模式
+是一種軟體常用的設計模式。單例對象的類只有一個實例存在。許多時候整個系統只擁有一個的全局對象，
+這樣有利於我們協調系統整體的行為。
+
+Application應用
+初始化應用程序級別的資源，如全局對象、環境配置變量等
+數據共享、數據緩存，如設置全局共享變量、方法等
+獲取應用程序當前的內存使用情況，及時釋放資源，從而避免被系統殺死
+監聽應用程序配置信息的改變，如屏幕旋轉等
+監聽應用程序內所有Activity的生命週期
+
+宣告自訂義的Application類別
+manifests\AndroidManifest.xml
+改下面這行
+<activity android:name=".App">
+
+Kotlin
+Kotlin\App

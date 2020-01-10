@@ -1,0 +1,25 @@
+圖片要支援各種解析度 不支援的話會跑版
+mipmap-mdpi 480px * 320px
+mipmap-hdpi 800px * 480px
+mipmap-xhdpi 1280px * 720px
+mipmap-xxhdpi 1600px * 960px
+mipmap-xxxhdpi 2560px * 1440px
+
+新增SVG格式向量圖
+File -> New -> Vector Asset
+
+需先在build.gradle設定
+vectorDrawables.useSupportLibrary = true
+
+Xml
+srcCompat minSdkVersion 最低支援版本，若設定低於Android5(API21)，系統將會生成PNG圖片檔案，
+來支援低版本，反之則不會額外生成PNG圖片檔案，將更節省APK大小
+
+Kotlin
+取得螢幕解析度
+val density = resources.displayMetrics.density
+
+Xml
+res\svg_main
+Kotlin
+Kotlin\SVGActivity

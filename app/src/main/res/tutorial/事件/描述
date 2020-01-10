@@ -1,0 +1,15 @@
+1.onClickListener(點擊就會被觸發)
+對某個元件進行點擊 輸入點擊後其他事件被觸發
+寫入觸發的事件在onClickListener中
+
+2.onLongClickListener(點擊後長按就會被觸發)
+對某個元件進行點擊 長按點擊後其他事件被觸發
+
+3.onCheckChangeListener
+主要用在RadioGroup專用的監聽器
+
+Xml
+res\layout\event_main
+
+Kotlin
+Kotlin\Event

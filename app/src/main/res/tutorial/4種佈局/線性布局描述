@@ -1,0 +1,15 @@
+線性布局(LinearLayout)
+參考res/layout/linear
+
+設定水平垂直置中
+android:gravity="center"
+填滿寬度、高度
+match_parent
+根據內容物大小來決定
+wrap_content
+布局方向vertical垂直horizontal水平
+orientation
+
+LinearLayout(horizontal)
+LinearLayout(vertical)
+如果只是需求垂直或者水平排版是相當好用的 但是在客制需求上 比較不容易滿足版面設計的需求

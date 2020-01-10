@@ -1,0 +1,4 @@
+android:text :元件文字內容
+android:textSize :元件文字大小
+android:TextColor :元件文字顏色
+android:background :元件背景顏色

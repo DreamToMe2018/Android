@@ -1,0 +1,13 @@
+ConstraintLayout
+
+預設 : 元件會出現在畫面左上角 即使你丟在介面設計中的其他地方
+所以在元件的四邊上 圓點給予限制 特別注意上下/左右都要給予限制
+
+為什麼要用ConstraintLayout
+傳統布局，往往太多階層，階層越多，導致效能越差
+
+ConstraintLayout大將低階層，運行效能大增
+需拉連接線
+
+Xml
+constraintlayout_main

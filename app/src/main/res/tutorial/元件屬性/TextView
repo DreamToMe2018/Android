@@ -1,0 +1,27 @@
+使用Xml設定文字、顏色、大小
+設定Id
+android:id="@+id/textView2"
+設定顯示的文字
+android:text="@string/hello"
+設定文字的顏色
+android:textColor="@color/colorPrimary"
+設定文字的大小
+android:textSize="24sp"
+
+XML
+res\layout\textview_main.xml
+用Kotlin設定文字、顏色、大小
+Kotlin\TextViewActivity.kt
+
+px : 像素
+dp : 螢幕解析度像素
+sp : 會根據系統中設定的字體大小變更
+Google 官方建議字體大小使用sp為單位，其餘使用dp為單位
+
+Xml
+android:textSize="40sp"
+Kotlin
+textView2.setTextSize(TypedValue.COMPLEX_UNIT_SP, 40F)
+
+單位採用sp的文字
+會根據手機系統中設定的字體大小變更而單位採用dp的文字，大小則不會跟著變更

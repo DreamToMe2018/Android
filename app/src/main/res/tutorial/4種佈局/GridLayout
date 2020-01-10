@@ -1,0 +1,2 @@
+網格式佈局 與TableLayout相似 但不同的地方在於GridLayout 需要指定行數與列數
+並指定元件放在指定位址 TabletLayout是直接丟TabletRow 產生行列數

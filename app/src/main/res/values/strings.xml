@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AppTutorialKotlin</string>
+
+    <!--範例-->
+    <string name="title">標題</string>
+    <string name="enter_title">輸入標題</string>
+    <string name="content">內容</string>
+    <string name="enter_content">輸入內容</string>
+
+    <string name="hello">哈囉</string>
+    <string name="hello2">你是在哈囉</string>
+    <string name="online">上線</string>
+    <string name="offline">下線</string>
+    <string name="toast_msg">顯示訊息</string>
+</resources>

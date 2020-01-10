@@ -1,0 +1,17 @@
+1.基本函数定義
+Method\add()
+
+2.帶有參數的函数定義
+Method\add2()
+
+3.函數有回傳值定義
+Method\add3()
+
+4.函數有默認參數值定義
+Method\add4()
+
+5.命名参数的方式來呼叫函數
+Method\add5()
+
+6.單行表達式函數
+Method\add6()

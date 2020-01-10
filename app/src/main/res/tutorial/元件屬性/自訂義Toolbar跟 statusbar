@@ -1,0 +1,6 @@
+toolbar   標題那一個大條的
+statusbar 是有顯示很多訊息的那一條
+
+android 預設的toolbar & status又點醜 所以如果想要關掉toolbar的話 可以透過以下的方
+res/value/style
+style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"

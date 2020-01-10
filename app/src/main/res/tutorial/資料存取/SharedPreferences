@@ -1,0 +1,7 @@
+不正確
+
+存儲簡單的資料
+可存的資料類型:boolean,int,float,String...等
+資料儲存後，APP關閉重新開啟，資料不會不見，但該APP刪除後，資料也會被刪除
+
+Kotlin\SharedPreferences.kt

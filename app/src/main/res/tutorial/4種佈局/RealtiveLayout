@@ -1,0 +1,5 @@
+用法與constraintLayout 很像
+本來是主要用於介面設計上不適用於LinearLayout的設計
+在設計上都是給予相對位置 所以會有產生元件重疊的現象
+不過應用性好像沒constraintLayout好
+有其侷限性

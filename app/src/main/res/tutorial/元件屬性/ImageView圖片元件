@@ -1,0 +1,51 @@
+使用圖片元件，顯示一張圖片
+設定呈現八種圖片延展型態
+
+圖片放在
+res/drawable/
+A.jpg
+IU.jpg
+TT.jpg
+twice.jpg
+
+Xml 屬性
+設定圖片位置
+matrix 使用 matrix 方式進行縮放
+fitXY  對圖片橫向、縱向獨立縮放，使得該圖片完全適應於該ImageView,圖片的縱橫比可能會改變。
+fitStart 保持縱橫比縮放圖片
+直到該圖片能完全顯示在ImageView中（圖片較長的邊長與ImageView相應的邊長相等）
+縮放完成後將該圖片放在ImageView的左上角
+fitCenter 保持縱橫比縮放圖片，
+直到該圖片能完全顯示在ImageView中（圖片較長的邊長與ImageView相應的邊長相等
+縮放完成後將該圖片放在ImageView的中央。
+fitEnd 保持縱橫比縮放圖片
+直到該圖片能完全顯示在ImageView中（圖片較長的邊長與ImageView相應的邊長相等）
+縮放完成後將該圖片放在ImageView的右下角。
+center 把圖片放在 ImageView 的中間，但不進行任何縮放。
+centerCrop 保持縱橫比縮放圖片，以使得圖片能完全覆蓋ImageView。只要圖片的最短邊能顯示出來即可。
+centerInside 保持縱橫比縮放圖片，以使得ImageView能完全顯示該圖片。
+
+Xml
+res\layout\imageview_main.xml
+Kotlin
+Kotlin\ImageViewActivity.kt
+
+XML用法
+android:adjustViewBounds="true" 設置ImageView是否調整自己的邊界來保持所顯示的圖片長寬比
+android:cropToPadding="true"    如果屬性為True，組件會被裁減到保留ImageView的Padding
+android:maxHeight="@dimen/title_txt_size" 設置ImageView最大高度
+android:maxWidth="@dimen/title_txt_size"  設置ImageView最大寬度
+
+android:src="@color/colorPrimaryDark"
+android:src和android:background，其中background通常指的是背景，而src指的是內容。
+另外當使用src填入圖片時，是按照圖片大小直接填充，並不會進行拉伸
+，而使用background填入圖片，則是會根據ImageView給定的寬度來進行拉伸。
+
+android:scaleType="center" 設置所顯示圖片如何適應ImageView的大小
+
+Kotlin
+imageView.adjustViewBounds = true
+imageView.cropToPadding = true
+imageView.maxHeight = 500
+imageView.maxWidth = 500
+imageView.scaleType = ImageView.ScaleType.CENTER

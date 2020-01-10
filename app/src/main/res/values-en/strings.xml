@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppTutorialKotlinEN</string>
+
+    <!--範例-->
+    <string name="title">Title</string>
+    <string name="enter_title">Enter title</string>
+    <string name="content">Content</string>
+    <string name="enter_content">Enter content</string>
+
+    <string name="hello">hello</string>
+    <string name="hello2">you are hello</string>
+    <string name="online">online</string>
+    <string name="offline">offline</string>
+    <string name="toast_msg">show message</string>
+</resources>

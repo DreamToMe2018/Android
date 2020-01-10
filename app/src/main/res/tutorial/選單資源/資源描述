@@ -1,0 +1,25 @@
+一般的應用程式通常使用畫面元件提供使用者執行功能操作，
+例如按鈕或下拉式選單，這些元件會顯示在畫面上，讓使用者可以隨時操作它們。
+你可以在應用程式畫面的最上方提供圖示或文字選單，
+選單資源是一個XML格式的檔案，放在專案的「res\menu」目錄，檔案名稱就是它的資源名稱，
+設定檔最外層的標籤是「menu」，裡面可以包含設定選單項目的「item」標籤，選單項目標籤裡面有這些設定值：
+
+android:id – 選單項目的資源名稱。
+android:title – 選單項目的文字。
+android:icon – 選單項目的圖示，指定一個圖形資源。
+android:showAsAction – 設定選單項目的樣式，可以設定為「ifRoom」、「never」、「withText」、「always」
+和「collapseActionView」。設定為never表示使用一般選單的樣式，其它的設定將選單顯示在Action Bar。
+android:onClick – 選擇選單以後呼叫的函式名稱。
+
+依照下列的步驟建立一個選單資源檔案：
+
+在「res」目錄上按滑鼠右鍵，選擇「New -> Android resource file」。
+在「File name」輸入「menu_main」。
+在「Resource type」選擇「Menu」。
+選擇「OK」。
+創建完之後就會有目錄了
+參考res\menu
+
+做完menu_main.xml
+
+開啟專案的「MainActivity.kt」，依照下列的說明加入載入選單資源的函式：

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--LinearLayout-->
+<!--match_parent:填滿寬度、高度-->
+<!--wrap_content:根據內容物大小來決定-->
+<!--orientation 布局方向vertical垂直horizontal水平-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name">
+    </TextView>
+
+<!--    混和多層線性布局-->
+<!--    vertical垂直-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--元件一-->
+        <!--元件二-->
+        <!--元件三-->
+    </LinearLayout>
+<!--    horizontal水平-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--元件四-->
+        <!--元件五-->
+    </LinearLayout>
+
+</LinearLayout>
+

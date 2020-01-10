@@ -1,0 +1,21 @@
+Android系統已經內建許多資源，都是一些比較一般性與常用的資源，你的應用程式應該要優先使用系統提供的資源，
+如果沒有的話再自己建立需要的資源，這樣可以減少應用程式的大小，而且也比較方便一些。
+
+Android內建的資源都宣告在API的「android.R」套件中，不論是系統或自己建立的資源，它們的分類方式都是一樣的，
+會依照不同的種類使用「android.R.資源種類」的格式，例如系統內建的畫面配置資源就放在「android.R.layout」套件。
+這些是宣告在「android.R」套件中常用的系統資源：
+
+android.R.anim – 系統動畫資源。
+android.R.color – 系統顏色狀態資源。
+android.R.dimen – 系統尺寸資源。
+android.R.drawable – 系統圖形與繪圖資源。
+android.R.layout – 系統畫面配置資源。
+android.R.menu – 系統選單資源。
+android.R.string – 系統文字資源。
+android.R.style – 系統樣式資源。
+
+在建立應用程式需要的資源之前，應該要先認識系統內建的資源，在Android開發人員網站，提供和Java API文件同樣格式的內容，
+方便開發人員查詢Android平台提供的API，
+網址是http://developer.android.com/reference/packages.html。選擇在「android」套件下的「R」類別後，
+就可以看到所有系統內建的資源。例如選擇「R.string」以後，可以看到宣告在這個類別裡面的文字資源，
+一般應用程式常用的確定、取消文字，變數的名稱是「ok」與「cancel」。

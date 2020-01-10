@@ -1,0 +1,13 @@
+目標點擊按鈕，顯示"你是在哈囉"
+
+Kotlin
+用以下方法才會顯示出來
+Toast.makeText(this,"你是在哈囉",Toast.LENGTH_LONG).show()
+this 是 Context 要在哪個頁面顯示
+"你是在哈囉" 是 Text 要顯示文字
+Toast.LENGTH_LONG 是 Duration 要顯示多久 LENGTH_LONG=7秒 LENGTH_SHORT=4秒
+
+XML
+res\layout\toast_main.xml
+用Kotlin設定文字、顏色、大小
+Kotlin\ToastActivity.kt

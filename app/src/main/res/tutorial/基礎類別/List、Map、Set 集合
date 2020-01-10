@@ -1,0 +1,23 @@
+Java 集合有 List、Map、Set。Kotlin 也有 List、Map、Set，但 Kotlin 中的 List、Map、Set 只能讀取，是無法進行修改，若需要可讀可寫，需使用 MutableList、MutableMap、MutableSet。
+集合的方法：
+add 新增元素
+remove 移除元素
+size 集合內元素的數量
+clear 清除所有集合內的元素
+
+參考
+Method\Lists
+Method\Maps
+Method\Sets
+
+List 集合特性：按照順序排列，可以放重覆的物件
+List 只能一開始初始資料和事後讀取該集合中的元素，之後不能進行增、刪、修。
+MutableList 集合可操作新增、移除、讀取、全部刪除資料:
+
+Map 集合特性： 採 key、value 方式存放，key 唯一不能重覆。
+Map 只能一開始初始資料和事後讀取元素，之後不能進行增、刪、修。
+MutableMap 集合可操作新增、移除、讀取、全部刪除資料:
+
+Set 集合特性：沒有特定順序，且沒有重覆的物件
+Set 只能一開始初始資料和事後讀取元素，之後不能進行增、刪、修。
+MutableSet 集合可操作新增、移除、讀取、全部刪除資料:

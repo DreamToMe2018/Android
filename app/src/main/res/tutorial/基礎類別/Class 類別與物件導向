@@ -1,0 +1,30 @@
+1.類別的定義 Class
+Class/Class 類似Service
+
+2.存取類別的屬性 Properties and Fields
+Class/Class2 類似ViewModel作法
+
+3.類別初始化 Constructors
+Class/Class3 特殊初始化ViewModel
+
+4.繼承
+Class/Class4 繼承用法 Open 等於C# abstract
+
+5.覆寫
+Class/Class5 要使用Open 才能覆寫
+
+6.介面
+Interface -> Class/IPersonService
+Service -> Class/Class6
+
+7.擴展
+Class/Class7
+
+8.資料類別 Data Classes
+Class/Class8
+
+9.泛型 Generics
+Class/Class9
+
+10.列舉 Enum Classes
+Class/Class10

@@ -1,0 +1,10 @@
+XML
+res\layout\button_main.xml
+用Kotlin設定文字、顏色、大小
+Kotlin\BtnActivity.kt
+
+設定水平垂直置中
+android:gravity="center"
+
+按鈕監聽是否被點擊
+btn.setOnClickListener

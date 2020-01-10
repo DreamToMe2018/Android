@@ -1,0 +1,8 @@
+val x =1
+when(x){
+   1 -> print("x 等於1")
+   2 -> print("x 等於2")
+   else ->{
+       print("x 不是1，也不是2")
+   }
+}

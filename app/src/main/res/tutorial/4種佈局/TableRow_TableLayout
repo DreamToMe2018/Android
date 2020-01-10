@@ -1,0 +1,8 @@
+TableRow
+TableLayout
+一個TableLayout包含好幾個TableRow 每個TableRow又可以包含好幾個元件
+放進TableRow裡的元件大小由TableLayout決定 無法自行設定
+
+每一列最後都還有可以利用的空間 可以使用
+"android:stretchColumns"屬性來做調整利用未使用空間
+android:stretchColumns ＝“1,2”表示剩餘空間分配在第二行與第三行

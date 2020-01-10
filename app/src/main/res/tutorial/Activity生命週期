@@ -1,0 +1,10 @@
+Android 5個生命階段
+
+Kotlin
+Kotlin\Activity
+
+OnCreate
+OnResume
+OnPause
+OnStop
+onDestroy

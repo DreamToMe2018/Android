@@ -1,0 +1,5 @@
+Xml
+res\layout\toast_main.xml
+Kotlin
+父類別 Kotlin\ToastV2BaseActivity
+子類別 Kotlin\ToastV2Activity

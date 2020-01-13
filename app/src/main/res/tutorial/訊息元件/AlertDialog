@@ -1,0 +1,9 @@
+可跳出訊息框類似於Window
+可以有按鈕顯示出來
+
+其中setPositiveButton/setNegativeButton/setNeutralButton差異在按鈕產生的位置
+
+XML
+res\alertdialog.xml
+Kotlin
+Kotlin\AlertDialog

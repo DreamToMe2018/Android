@@ -1,0 +1,20 @@
+從最下面顯示
+https://ithelp.ithome.com.tw/articles/10194641
+
+點擊 File -> Project Structure ->  Dependencies -> app -> +
+-> 新增com.android.support:design 搜尋選某一個版本
+
+最基礎使用方式
+Snackbar.make(View.id, "訊息",出現時間).show()
+
+Snackbar右側可以有按鈕事件 自訂action
+Snackbar.make(snackBar_view,"你是山東之虎",5000)
+    .setAction("按鈕測試", View.OnClickListener {
+          Toast.makeText(this,"天氣之子", Toast.LENGTH_SHORT).show()
+}).show()
+
+XML
+res\snackbar_main.xml
+
+Kotlin
+Kotlin\SnackBarActivity

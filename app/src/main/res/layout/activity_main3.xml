@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main2Activity">
+    tools:context=".Main3Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,23 +15,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal"/>
+            android:text="TextView" />
 
-        <ImageView
-            android:id="@+id/imageView16"
-            android:layout_width="match_parent"
-            android:layout_height="366dp"
-            app:srcCompat="@drawable/nechiko" />
-
-        <Button
-            android:id="@+id/btn"
+        <TextView
+            android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="點我告訴你我是誰" />
-
+            android:text="TextView" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

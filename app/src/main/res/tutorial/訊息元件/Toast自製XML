@@ -1,0 +1,22 @@
+先在layout資料夾下建立一個xml
+畫好你想要的xml
+
+首先建立一個Toast物件
+var Toast2 = Toast(this)
+設定顯示高度與對齊方式
+Toast2.setGravity(Gravity.CENTER,0,0)
+設定Toast顯示時間
+Toast2.duration(Toast.LENGTH_LONG)
+建立一個layoutInflater
+var inflater2 = layoutInflater
+將做好的xml的名稱與ID指定給layoutInflater
+val toast_layout = inflater2.inflate(R.layout.toast_layout,toast_view)
+將做好的layoutInflater指定給Toast
+Toast2.view = toast_layout
+顯示
+Toast2.show()
+
+XML
+res\toast_owner_main
+Kotlin
+Kotlin\ToastOwner

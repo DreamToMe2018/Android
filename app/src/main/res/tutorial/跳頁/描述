@@ -1,6 +1,0 @@
-Andorid Activity介面部分
-主要由.xml 和 .kt 組合而成
-.xml 負責畫面
-.kt 負責程式動作
-今天一個程式如果有需要多個介面 可以增加Activity
-

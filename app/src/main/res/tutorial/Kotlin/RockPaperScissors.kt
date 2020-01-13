@@ -18,7 +18,7 @@ class RockPaperScissors : AppCompatActivity() {
 
         // 一定要回傳True
         imgHand.setOnLongClickListener {
-           Toast.makeText(this,"你案太久了，看看禰豆子",Toast.LENGTH_LONG).show()
+           Toast.makeText(this,"你按太久了，看看禰豆子",Toast.LENGTH_LONG).show()
             true
         }
 
@@ -28,7 +28,7 @@ class RockPaperScissors : AppCompatActivity() {
 
         // 一定要回傳True
         imgRock.setOnLongClickListener {
-            Toast.makeText(this,"你案太久了，看看禰豆子",Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"你按太久了，看看禰豆子",Toast.LENGTH_LONG).show()
             true
         }
 
@@ -38,7 +38,7 @@ class RockPaperScissors : AppCompatActivity() {
 
         // 一定要回傳True
         imgScissors.setOnLongClickListener {
-            Toast.makeText(this,"你案太久了，看看禰豆子",Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"你按太久了，看看禰豆子",Toast.LENGTH_LONG).show()
             true
         }
     }

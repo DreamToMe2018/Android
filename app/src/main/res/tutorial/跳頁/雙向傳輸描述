@@ -1,0 +1,39 @@
+今天實作一個點餐系統 前端設置按鍵進入點餐系統 點完餐後返回前端 前端上秀出所點餐點
+
+Xml
+res/activity_order_first
+res/activity_order_second
+
+Kotlin
+com.example.apptutorialkotlin\OrderFirst
+com.example.apptutorialkotlin\OrderSecond
+
+第一個頁面
+如果要雙向傳輸的話要設定RequestCode
+var intent = Intent(this,Main2Activity::class.java)
+傳到下一頁會在回傳給上一頁
+startActivityForResult(intent,0)
+
+第二個頁面
+要填寫resultCode
+val newIntent = Intent()
+newIntent.putExtra("key",bundle)
+setResult(10,newIntent)
+finish()
+
+第一個頁面
+要覆寫此方法拿出資料
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if(requestCode == 0){
+            if(resultCode == 10){
+
+                var drinkName = data?.getBundleExtra("key")?.getString("drinkName")
+                drink.text = drinkName
+                var iceName = data?.getBundleExtra("key")?.getString("ice")
+                ice.text=iceName
+                var sugarName = data?.getBundleExtra("key")?.getString("sugar")
+                sugar.text = sugarName
+            }
+        }
+    }

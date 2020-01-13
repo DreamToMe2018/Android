@@ -1,0 +1,33 @@
+Andorid Activity介面部分
+主要由.xml 和 .kt 組合而成
+.xml 負責畫面
+.kt 負責程式動作
+今天一個程式如果有需要多個介面 可以增加Activity
+
+https://ithelp.ithome.com.tw/articles/10194004
+File -> New -> Activity -> Empty Activity
+系統就會自動幫你新增.xml 和.kt
+但除了增加這兩個檔案之外 另外還在AndroidManifest.xml 中增加了設定
+
+app/manifests
+<activity android:name=".Main2Activity"></activity>
+
+Intent 跳頁
+Android 應用元件資訊的傳遞一律需要透過Intent(類似管理員)
+需要從A畫面切換到B畫面 除了透過起動處發之外 還需要包含intent資訊傳遞
+創建一個intent 名稱為intent_value 裡面必須包含(起始頁面,作用頁面)
+
+1.::的作用
+2.class 為何不是kt 詢問一下之後才發現為class名稱
+3..java
+3.intent_value.putExtra為攜帶資料 必須帶有key值 進入下一個頁面後會需要key值找尋資料
+最後啟動intent
+方法為startActivity(intent_value)
+
+Xml
+res/activity_main2
+res/activity_main3
+
+Kotlin
+Kotlin/Main2Activity
+Kotlin/Main3Activity

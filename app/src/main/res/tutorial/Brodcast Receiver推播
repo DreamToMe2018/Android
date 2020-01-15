@@ -1,0 +1,18 @@
+service比較像是背景系統的工作
+Brodcast Receiver比較像是一套廣播 只是同樣在背景工作
+Brodcast Receiver 須包含三個要件
+
+1.Brodcast Receiver(執行接收廣播後要執行的工作)
+2.IntentFilter (建立IntentFilter物件指定要接收的廣播)
+3.registerReceiver(註冊IntentFilter)
+
+新增一個Brodcast Receiver
+File -> New -> Other -> Brodcast Receiver
+
+BrodcastReceiver
+com.example.apptutorialkotlin\MyReceiver.kt
+
+Kotlin
+Kotlin\BrodcastReceiverActivity
+
+就算不在程式中也可以收到訊息

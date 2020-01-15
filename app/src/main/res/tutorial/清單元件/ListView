@@ -1,0 +1,24 @@
+Adapter的功用， 並且會用到Anko的onClick和alert來簡化App的程式碼。
+提到的ArrayAdapter是可以直接拿來用的類別，無需由其他物件繼承便可以使用。
+
+Adapter本身算是ListView跟資料來源的橋樑，如果你是實際寫個繼承BaseAdapter的類別並實際去override裡面的方法，
+就會明白連個getItem或getItemId都得自己去定義，但在此例ArrayAdapter同時也扮演著資料來源的角色，
+所以我們省去了override的麻煩。
+
+http://zongjia.blogspot.com/2018/02/kotlinandroid03-listview01-arrayadapter.html
+xml
+res/simple_list_item_1
+Kotlin
+Kotlin\ListView
+
+ArrayAdapter<T>.getItem(position: Int)
+功用: 取得某個位置的值，用整數索引當作參數
+ArrayAdapter<T>.remove(某個值: T)
+那個某個值的型態是依據你ArrayAdapter當初建構T的型態而定，
+在範例中是String型態。
+功用: 從ArrayAdapter中移除某個值
+ArrayAdapter<T>.clear()
+功用: 清空ArrayAdapter中所有值。
+
+會依照Adapter即時顯示
+main_listview.adapter = myAdapter

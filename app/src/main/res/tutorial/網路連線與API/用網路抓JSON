@@ -1,0 +1,17 @@
+https://ithelp.ithome.com.tw/articles/10196948
+
+先安裝com.squareup.okhttp3:okhttp:3.10.1
+
+然後去manifests\AndroidManifest.xml
+新增
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+用來開放網路權限
+
+可能只能用HTTP抓
+暫無作用
+
+Kotlin
+Kotlin\Okhttp
+
+XML
+res\okhttp

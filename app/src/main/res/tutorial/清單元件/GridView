@@ -1,0 +1,15 @@
+https://givemepass.blogspot.com/2011/11/gridview.html
+
+XML
+先放一個GridView
+res/gridview
+再新增GridView的Layout
+grid_item
+
+Kotlin
+Kotlin\GridView
+
+
+參考
+https://blog.csdn.net/hyp712/article/details/8767611
+https://spicyboyd.blogspot.com/2018/03/app-gridview.html

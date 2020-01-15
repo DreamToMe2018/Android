@@ -23,7 +23,7 @@ class AlertDialog : AppCompatActivity(){
             // 其中setPositiveButton/setNegativeButton/setNeutralButton差異在按鈕產生的位置
             alertDialog.setPositiveButton("cancel",{dialog, which ->
                 Toast.makeText(this,"取消", Toast.LENGTH_SHORT).show()
-            })
+                })
             alertDialog.setNegativeButton("confirm",{dialog, which ->
                 Toast.makeText(this,"確認", Toast.LENGTH_SHORT).show()
             })

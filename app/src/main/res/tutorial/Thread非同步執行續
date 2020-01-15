@@ -1,0 +1,44 @@
+非同步執行緒 ：
+執行緒 就是你正在執行的工作 那非同步執行緒又是如何
+請想像程式如你一個人在工作 工作太多的話 你的辦事效率就會變慢 那如何能夠幫你增加效率呢
+首先就是要工作分類 依照重要程度來分先後順序
+最重要的是 要多請一個人來幫你執行分類的其他工作
+所以當你在執行你的工作的時候 會有另一個人在幫你值行你另外的工作 也許你們兩人的工作並不是同調的 所以稱為非同步執行緒
+這另一個人就是 非同步執行緒Thread
+
+Thread.sleep 讓Thread沈睡
+msg傳送訊息給handler
+run方法執行非同步執行緒的工作
+start()執行非同步執行緒
+
+#暫時沒有作用僅供參考
+lass MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+//Thread物件
+        Thread{
+            run {
+                Thread.sleep(10)
+                val msg = Message()
+                msg.what = 1
+                mheadler.sendMessage(msg)
+            }
+        }.start()
+    }
+
+下面代表要接收Thread傳來的訊息handler
+讓headler接收到工作後發出下一個工作
+
+//監聽物件Handler
+    private var  mheadler = object : Handler(){
+        override fun handleMessage(msg: Message) {
+            when(msg?.what){
+                // Handle不知道this是誰所以要指定
+                1-> Toast.makeText(this@MainActivity,"thread_test", Toast.LENGTH_SHORT)
+            }
+            super.handleMessage(msg)
+        }
+    }
+}

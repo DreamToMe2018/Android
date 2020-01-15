@@ -1,0 +1,10 @@
+新增一個.kt
+
+Kotlin
+資料庫操作的類別
+Kotlin\ManagedSQLLiteOpenHelper
+呼叫的地方
+Kotlin\SQLite
+
+Xml
+res/sqlite

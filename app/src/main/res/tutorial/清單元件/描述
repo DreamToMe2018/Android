@@ -1,0 +1,10 @@
+4種常用的
+ListView
+GridView
+Spinner 下拉式選單
+RecyclerView
+
+必須先搞懂Adapter
+Adapter 是負責管理元件的管理 當元件發生點擊或者拉動 Adapter就會負責回傳資料給程式做下一步
+
+還搞不懂如何實作

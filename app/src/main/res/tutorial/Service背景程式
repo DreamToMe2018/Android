@@ -1,0 +1,27 @@
+主要就是背景程式 在切換到其他程式的情況下 依舊可以持續執行的程式
+
+#暫時沒有作用
+
+https://ithelp.ithome.com.tw/articles/10195242
+File -> New -> Service ->Service
+
+系統會幫你新增好server.kt
+在Androidmanifset.xml中也會增加屬性service
+   <service
+            android:name=".Service"
+            android:enabled="true"
+            android:exported="true">
+   </service>
+
+要啟動server 有兩種形式
+第一種 startService()
+裡面必須先建立重寫兩種方法
+onCreate() 在建立時只會啟動一次
+onStartCommand() 背景執行的程式
+
+service可以夾帶資料從mainActivity 帶到Service中 應用Intent夾帶資料進入
+在onStartCommand()中 回傳值主要有三種定義
+START_NOT_STICKY:Service結束時就結束服務
+START_STICKY: Service結束時 系統重啟並再次調用onStartCommand(), instant被清空
+START_REDELIVER_INTENT:Service結束時 系統重啟並再次調用onStartCommand(), instant不清空
+看到系統中正在執行的程式中有你的程式名 代表撰寫成功

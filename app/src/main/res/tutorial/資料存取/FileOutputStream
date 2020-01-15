@@ -1,0 +1,8 @@
+指的是將檔案儲存在app內部的資料夾內
+只有自身的app可以來做存取 除非root
+
+Kotlin
+Kotlin\FileOutputStream
+
+XML
+res\fileoutputstream

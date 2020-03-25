@@ -27,3 +27,26 @@ Xml
 res\layout\edittext_main.xml
 Kotlin
 Kotlin\EditTextActivity.kt
+
+android:inputType
+none文字不可編輯
+textCapCharacters大寫文字
+text一般文字
+textCapWords字頭大寫
+textUri	網址文字
+textCapSentences首字字頭大小
+number數字格式
+textAutoCorrect	自動校正錯字
+numberSigned有號數字格式
+textAutoComplete輸入自動完成
+numberDecimal十進位數字格式
+textMultiLine允許多行輸入
+phone輸入電話號碼
+textNoSuggestions不提示
+datetime輸入日期時間
+textEmailAddressEmail格式
+date輸入日期
+textPersonName人名格式
+time輸入時間
+textPassword密碼格式
+textVisiblePassword 可見密碼格式

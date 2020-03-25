@@ -28,3 +28,8 @@ Class/Class9
 
 10.列舉 Enum Classes
 Class/Class10
+
+init (初始化) 及 second constructor (次建構子)
+繼承的類別則要加上 open 關鍵字
+Super等於C#的Base 呼叫最上層的
+搭配 super 關鍵字，則既可以往上層執行主類別的方法，接續還可以執行子類別的方法 (或顛倒順序)。

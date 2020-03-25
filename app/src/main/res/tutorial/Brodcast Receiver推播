@@ -16,3 +16,6 @@ Kotlin
 Kotlin\BrodcastReceiverActivity
 
 就算不在程式中也可以收到訊息
+
+參考
+BroadcastReceiver專案

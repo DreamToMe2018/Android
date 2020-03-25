@@ -11,3 +11,6 @@ res\sharedpreferences
 sharedPref.edit().putBoolean("first_login",true).apply()
 變False
 sharedPref.edit().putBoolean("first_login",false).apply()
+
+參考
+SharedPreferences專案

@@ -22,3 +22,6 @@ ArrayAdapter<T>.clear()
 
 會依照Adapter即時顯示
 main_listview.adapter = myAdapter
+
+參考
+ListView專案

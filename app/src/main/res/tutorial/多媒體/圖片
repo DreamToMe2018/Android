@@ -45,3 +45,6 @@ video/3gpp：3GP影片。
 有了其他Android App的幫助，
 設計師就不需要自己使用ContentProvider來取的指定MIME類型下的檔案清單，
 只需要讓這些擁有檔案選取功能的App知道應該要選擇什麼樣MIME類型的檔案即可。
+
+參考
+MediaImage專案
